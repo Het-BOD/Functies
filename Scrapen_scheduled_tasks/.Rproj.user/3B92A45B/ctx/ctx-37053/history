@@ -1,0 +1,328 @@
+taskscheduler_delete("run_scrapen_KIWA")
+## Libraries laden -----------------------------------------------------------------------
+library(taskscheduleR)
+taskscheduler_delete("run_scrapen_KIWA")
+#Je moet hiervoor al een webdriver voor chrome installeren/downloaden
+#Stap 1: Run the Selenium Server and connect to it -----------------------------------------------------------------------
+rds  <- rsDriver(browser=c("chrome"), chromever = "85.0.4183.87")
+remDr <- rds$client
+#Je moet hiervoor al een webdriver voor chrome installeren/downloaden
+#Stap 1: Run the Selenium Server and connect to it -----------------------------------------------------------------------
+rds  <- rsDriver(browser=c("chrome"), chromever = "85.0.4183.87")
+## Libraries laden -----------------------------------------------------------------------
+library(RSelenium)
+library(XML)
+library(tidyverse)
+#Je moet hiervoor al een webdriver voor chrome installeren/downloaden
+#Stap 1: Run the Selenium Server and connect to it -----------------------------------------------------------------------
+rds  <- rsDriver(browser=c("chrome"), chromever = "85.0.4183.87")
+#Je moet hiervoor al een webdriver voor chrome installeren/downloaden
+#Stap 1: Run the Selenium Server and connect to it -----------------------------------------------------------------------
+rds  <- rsDriver(browser=c("chrome"), chromever = "85.0.4183.87", port = 14415L)
+## Libraries laden -----------------------------------------------------------------------
+library(RSelenium)
+library(XML)
+library(tidyverse)
+library(netstat)
+#Je moet hiervoor al een webdriver voor chrome installeren/downloaden
+#Stap 1: Run the Selenium Server and connect to it -----------------------------------------------------------------------
+rds  <- rsDriver(browser=c("chrome"), chromever = "85.0.4183.87", port = 14415L)
+remDr <- rds$client
+#Nagiveer naar de gewenste website -----------------------------------------------------------------------
+remDr$navigate("https://dataportal.kiwa.info/site/login")
+remDr$getTitle()
+remDr$getStatus()
+#Zoek naar de specifieke elementen waar je text wilt invoeren of een mouseclick op wilt uitvoeren
+#Let op het verschil tussen find element en find elements!!
+#Naar een bepaald element gaan door te zoeken op ID (kan ook op class of xpath)
+emailbox <- remDr$findElement(using = 'id', value = "loginform-username")
+emailbox$getElementAttribute("id")
+emailbox$getElementAttribute("class")
+emailbox$sendKeysToElement(list("jeroen.bax@odzob.nl"))
+passwordbox <- remDr$findElement(using = 'id', value = "loginform-password")
+passwordbox$getElementAttribute("id")
+passwordbox$getElementAttribute("class")
+passwordbox$sendKeysToElement(list("R000153330"))
+inlogbutton <- remDr$findElement(using = 'name', value= "login-button")
+inlogbutton$getElementAttribute("id")
+inlogbutton$getElementAttribute("class")
+inlogbutton$clickElement()
+remDr$getCurrentUrl()
+remDr$navigate("https://dataportal.kiwa.info/project")
+remDr$getCurrentUrl()
+#Headers ophalen om vervolgens een lege tabel te specificeren en te loopen over pagina's -----------------------------------------------------------------------
+xmlcode <- htmlParse(remDr$getPageSource()[[1]])
+datahead <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//thead/tr/th")) %>% mutate(colnames=ifelse(is.na(a), text, a)) %>% select(colnames) %>% .$colnames
+rm(xmlcode)
+data_totaal <- data.frame(matrix(ncol=9, nrow=0)); colnames(data_totaal) <- datahead
+pages <- c(1:10)
+for (x in pages) {
+#Naar de pagina gaan
+remDr$navigate(paste0("https://dataportal.kiwa.info/project/index?page=", x))
+print(remDr$getCurrentUrl())
+##Tabel scrapen en toevoegen aan data_totaal
+xmlcode <- htmlParse(remDr$getPageSource()[[1]])
+datahead <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//thead/tr/th")) %>% mutate(colnames=ifelse(is.na(a), text, a)) %>% select(colnames) %>% .$colnames
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//tbody/tr"))
+colnames(databody_pagex) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex)
+}
+write.csv(data_totaal, paste0("KIWA_data_gescraped_", Sys.Date(), ".csv"), row.names=FALSE)
+remDr$close()
+rds$server$stop()
+rm(rds)
+gc()
+## Libraries laden -----------------------------------------------------------------------
+library(taskscheduleR)
+## Runnen script automatisch schedulen -----------------------------------------------------------------------
+taskscheduler_create(taskname = "run_scrapen_KIWA", rscript = "C:/Users/omwekr02/Documents/Scrapen_scheduled_tasks/Scrapen_KIWA.R",
+schedule = "MINUTE", starttime = format(Sys.time() + 50, "%H:%M"), modifier = 10)
+#Bekijken welke taken er nu allemaal in de scheduler staan
+tasks <- taskscheduler_ls()
+View(tasks)
+## Libraries laden -----------------------------------------------------------------------
+library(RSelenium)
+library(XML)
+library(tidyverse)
+#Je moet hiervoor al een webdriver voor chrome installeren/downloaden
+#Stap 1: Run the Selenium Server and connect to it -----------------------------------------------------------------------
+rds  <- rsDriver(browser=c("chrome"), chromever = "85.0.4183.87")
+remDr <- rds$client
+#Nagiveer naar de gewenste website -----------------------------------------------------------------------
+remDr$navigate("https://samenpartner.gelderland.nl/Login.aspx")
+remDr$getTitle()
+remDr$getStatus()
+#Zoek naar de specifieke elementen waar je text wilt invoeren of een mouseclick op wilt uitvoeren
+#Let op het verschil tussen find element en find elements!!
+#Naar een bepaald element gaan door te zoeken op ID (kan ook op class of xpath)
+emailbox <- remDr$findElement(using = 'id', value = "LoginControl_UserName")
+emailbox$getElementAttribute("id")
+emailbox$getElementAttribute("class")
+emailbox$sendKeysToElement(list("ekramer"))
+passwordbox <- remDr$findElement(using = 'id', value = "LoginControl_Password")
+passwordbox$getElementAttribute("id")
+passwordbox$getElementAttribute("class")
+passwordbox$sendKeysToElement(list("Samenbod1!"))
+inlogbutton <- remDr$findElement(using = 'name', value= "LoginControl$LoginButton")
+inlogbutton$getElementAttribute("id")
+inlogbutton$getElementAttribute("class")
+inlogbutton$clickElement()
+#Alleen eigen regio uitvinken
+regiobutton <- remDr$findElement(using = 'id', value= "ContentPlaceHolder1_chkAlleenEigenRegio")
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+##Tabel scrapen en toevoegen aan data_totaal
+xmlcode <- htmlParse(remDr$getPageSource()[[1]])
+xmlcode
+datahead <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//tbody/tr/th")) %>% mutate(colnames=ifelse(is.na(a), text, a)) %>% select(colnames) %>% .[9:19,]
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody', "/tr[@class='donker']/td", sep=""))) %>%
+mutate(colnames=ifelse(is.na(a), ifelse(is.na(text),span, text), a)) %>% select(colnames) %>% filter(colnames != " ") %>% droplevels()
+View(databody_pagex)
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody', "/tr[@class='licht']/td", sep="")))
+colnames(databody_pagex) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex)
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+View(data_totaal)
+##Tabel scrapen en toevoegen aan data_totaal - OPTIE2
+xmlcode <- htmlParse(remDr$getPageSource()[[1]])
+xmlcode
+datahead <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//tbody/tr/th")) %>% mutate(colnames=ifelse(is.na(a), text, a)) %>% select(colnames) %>% .[9:19,]
+##Tabel scrapen en toevoegen aan data_totaal - OPTIE2
+rows <- c(3:17)
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+colnames(databody_pagex) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex)
+}
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+View(databody_pagex)
+x=3
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+View(databody_pagex)
+View(databody_pagex)
+emptycols <- colSums(is.na(databody_pagex)) == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+View(databody_pagex)
+emptycols <- colSums(databody_pagex == "") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+View(databody_pagex)
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == "") == nrow(databody_pagex)
+emptycols
+emptycols <- colSums(databody_pagex == "" | databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+View(databody_pagex)
+unique(databody_pagex$NA.5)
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == "" | databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+unique(databody_pagex$NA.8)
+unique(databody_pagex$NA.0)
+unique(databody_pagex$NA.9)
+emptycols <- colSums(databody_pagex == "" || databody_pagex == " ") == nrow(databody_pagex)
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+colnames(databody_pagex) <- datahead
+View(databody_pagex)
+databody_pagex_sub <- databody_pagex[,1:11]
+View(databody_pagex_sub)
+data_totaal <- rbind(data_totaal, databody_pagex)
+View(databody_pagex_sub)
+datahead
+colnames(databody_pagex_sub) <- datahead
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex)
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex)
+data_totaal <- rbind(data_totaal, databody_pagex_sub)
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)
+View(data_totaal)
+##Tabel scrapen en toevoegen aan data_totaal - OPTIE2
+rows <- c(3:17)
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)
+}
+View(data_totaal)
+##Tabel scrapen en toevoegen aan data_totaal
+xmlcode <- htmlParse(remDr$getPageSource()[[1]])
+xmlcode
+datahead <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//tbody/tr/th")) %>% mutate(colnames=ifelse(is.na(a), text, a)) %>% select(colnames) %>% .[9:19,]
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+##Tabel scrapen en toevoegen aan data_totaal - OPTIE2
+rows <- c(3:17)
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)
+}
+View(data_totaal)
+pages <- xmlToDataFrame(nodes=getNodeSet(xmlcode,"//tbody/tr/td/table/tbody/tr/td"))
+View(pages)
+#Ga naar de volgende pagina
+regiobutton <- remDr$findElement(using = 'xpath', value= "//tbody/tr/td/table/tbody/tr/td")
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+#Ga naar de volgende pagina
+regiobutton <- remDr$findElement(using = 'xpath', value= '//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[2]/a')
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+#Ga naar de volgende pagina
+regiobutton <- remDr$findElement(using = 'xpath', value= '//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[3]/a')
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+pages <- c(1:10)
+for (x in pages){
+pages <- c(1:10)
+for (x in pages){
+for (x in pages){
+regiobutton <- remDr$findElement(using = 'xpath', value= paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[', x, ']/a'))
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)}
+}
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+rows <- c(3:17)
+pages <- c(1:10)
+for (x in pages){
+regiobutton <- remDr$findElement(using = 'xpath', value= paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[', x, ']/a'))
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)}
+}
+View(data_totaal)
+View(data_totaal)
+for (p in pages){
+regiobutton <- remDr$findElement(using = 'xpath', value= paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[', p, ']/a'))
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)}
+}
+for (p in pages){
+for (x in rows){
+regiobutton <- remDr$findElement(using = 'xpath', value= paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[', p, ']/a'))
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)}
+}
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+rows <- c(3:17)
+pages <- c(1:10)
+for (p in pages){
+for (x in rows){
+regiobutton <- remDr$findElement(using = 'xpath', value= paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[', p, ']/a'))
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)}
+}
+data_totaal <- data.frame(matrix(ncol=11, nrow=0)); colnames(data_totaal) <- datahead
+for (p in pages){
+for (x in rows){
+databody_pagex <- xmlToDataFrame(nodes=getNodeSet(xmlcode, paste0('///*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[', x, "]")))
+emptycols <- colSums(databody_pagex == " ") == nrow(databody_pagex)
+databody_pagex <- databody_pagex[!emptycols]
+databody_pagex_sub <- databody_pagex[,1:11]
+colnames(databody_pagex_sub) <- datahead
+data_totaal <- rbind(data_totaal, databody_pagex_sub)}
+regiobutton <- remDr$findElement(using = 'xpath', value= paste0('//*[@id="ContentPlaceHolder1_dgrKlachten"]/tbody/tr[1]/td/table/tbody/tr/td[', p, ']/a'))
+regiobutton$getElementAttribute("id")
+regiobutton$getElementAttribute("class")
+regiobutton$clickElement()
+}
+View(data_totaal)
+View(data_totaal)
+taskscheduler_delete("run_scrapen_KIWA")
+## Libraries laden -----------------------------------------------------------------------
+library(taskscheduleR)
+taskscheduler_delete("run_scrapen_KIWA")
+taskscheduler_create(taskname = "run_scrapen_KIWA", rscript = "C:/Users/omwekr02/Documents/Scrapen_scheduled_tasks/Scrapen_KIWA2.R",
+schedule = "MINUTE", starttime = format(Sys.time() + 50, "%H:%M"), modifier = 10)
+## Runnen script automatisch schedulen -----------------------------------------------------------------------
+library("taskscheduleR")
+taskscheduler_create(taskname = "run_scrapen_KIWA", rscript = "C:/Users/omwekr02/Documents/Scrapen_scheduled_tasks/Scrapen_KIWA2.R",
+schedule = "MINUTE", starttime = format(Sys.time() + 50, "%H:%M"), modifier = 10)

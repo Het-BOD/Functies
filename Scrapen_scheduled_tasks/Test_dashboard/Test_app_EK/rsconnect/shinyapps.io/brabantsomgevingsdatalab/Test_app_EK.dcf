@@ -1,0 +1,10 @@
+name: Test_app_EK
+title:
+username:
+account: brabantsomgevingsdatalab
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3080278
+bundleId: 4018051
+url: https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+when: 1608624948.16675

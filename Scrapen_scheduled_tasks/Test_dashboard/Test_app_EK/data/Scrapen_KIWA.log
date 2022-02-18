@@ -1,0 +1,777 @@
+$win32
+[1] "85.0.4183.83" "85.0.4183.87" "86.0.4240.22" "87.0.4280.20"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir18356_1772324022"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:56722"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "424887b6f946b4e1e43a6332a1b618cc"
+
+$id
+[1] "424887b6f946b4e1e43a6332a1b618cc"
+
+[[1]]
+[1] "Kiwa OGC Portal"
+
+$ready
+[1] TRUE
+
+$message
+[1] "Server is running"
+
+$build
+$build$revision
+[1] "f148142cf8"
+
+$build$time
+[1] "2019-07-01T21:30:10"
+
+$build$version
+[1] "4.0.0-alpha-2"
+
+
+$os
+$os$arch
+[1] "amd64"
+
+$os$name
+[1] "Windows 10"
+
+$os$version
+[1] "10.0"
+
+
+$java
+$java$version
+[1] "1.8.0_231"
+
+
+[[1]]
+[1] "loginform-username"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] "loginform-password"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] ""
+
+[[1]]
+[1] "btn btn-primary"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/project"
+
+$win32
+[1] "85.0.4183.83" "85.0.4183.87" "86.0.4240.22" "87.0.4280.20" "87.0.4280.88"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir1068_1952709171"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:64033"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "46bcae6ba3688c5c965d90beeea5a6f2"
+
+$id
+[1] "46bcae6ba3688c5c965d90beeea5a6f2"
+
+[[1]]
+[1] "Kiwa OGC Portal"
+
+$ready
+[1] TRUE
+
+$message
+[1] "Server is running"
+
+$build
+$build$revision
+[1] "f148142cf8"
+
+$build$time
+[1] "2019-07-01T21:30:10"
+
+$build$version
+[1] "4.0.0-alpha-2"
+
+
+$os
+$os$arch
+[1] "amd64"
+
+$os$name
+[1] "Windows 10"
+
+$os$version
+[1] "10.0"
+
+
+$java
+$java$version
+[1] "1.8.0_231"
+
+
+[[1]]
+[1] "loginform-username"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] "loginform-password"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] ""
+
+[[1]]
+[1] "btn btn-primary"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/project"
+
+$win32
+[1] "85.0.4183.83" "85.0.4183.87" "86.0.4240.22" "87.0.4280.20" "87.0.4280.88"
+[6] "88.0.4324.27"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir8292_1401662736"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:51481"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "2712a9f40ea562541f6eea623cd3b670"
+
+$id
+[1] "2712a9f40ea562541f6eea623cd3b670"
+
+[[1]]
+[1] "Kiwa OGC Portal"
+
+$ready
+[1] TRUE
+
+$message
+[1] "Server is running"
+
+$build
+$build$revision
+[1] "f148142cf8"
+
+$build$time
+[1] "2019-07-01T21:30:10"
+
+$build$version
+[1] "4.0.0-alpha-2"
+
+
+$os
+$os$arch
+[1] "amd64"
+
+$os$name
+[1] "Windows 10"
+
+$os$version
+[1] "10.0"
+
+
+$java
+$java$version
+[1] "1.8.0_231"
+
+
+[[1]]
+[1] "loginform-username"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] "loginform-password"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] ""
+
+[[1]]
+[1] "btn btn-primary"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/project"
+
+$win32
+[1] "85.0.4183.83" "85.0.4183.87" "86.0.4240.22" "87.0.4280.20" "87.0.4280.88"
+[6] "88.0.4324.27"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir17896_1813202429"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:62760"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "16a1d809db173e12a8bae25e0a052762"
+
+$id
+[1] "16a1d809db173e12a8bae25e0a052762"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir6772_170664439"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:62772"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "2c69d2b44265eafba6c126bfeb246c92"
+
+$id
+[1] "2c69d2b44265eafba6c126bfeb246c92"
+
+[[1]]
+[1] "Kiwa OGC Portal"
+
+$ready
+[1] TRUE
+
+$message
+[1] "Server is running"
+
+$build
+$build$revision
+[1] "f148142cf8"
+
+$build$time
+[1] "2019-07-01T21:30:10"
+
+$build$version
+[1] "4.0.0-alpha-2"
+
+
+$os
+$os$arch
+[1] "amd64"
+
+$os$name
+[1] "Windows 10"
+
+$os$version
+[1] "10.0"
+
+
+$java
+$java$version
+[1] "1.8.0_231"
+
+
+[[1]]
+[1] "loginform-username"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] "loginform-password"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] ""
+
+[[1]]
+[1] "btn btn-primary"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+[1] TRUE
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+$win32
+[1] "85.0.4183.83" "85.0.4183.87" "86.0.4240.22" "87.0.4280.20" "87.0.4280.88"
+[6] "88.0.4324.27"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir4328_410087791"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:55032"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "5cf1b36d32833d8b1a6a477dc7d86b28"
+
+$id
+[1] "5cf1b36d32833d8b1a6a477dc7d86b28"
+
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "87.0.4280.88"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})"
+
+$chrome$userDataDir
+[1] "C:\\Users\\omwekr02\\AppData\\Local\\Temp\\scoped_dir11928_1373592017"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:55044"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "windows"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "142884dfc5bd06d233f9e4fb0cb9cba0"
+
+$id
+[1] "142884dfc5bd06d233f9e4fb0cb9cba0"
+
+[[1]]
+[1] "Kiwa OGC Portal"
+
+$ready
+[1] TRUE
+
+$message
+[1] "Server is running"
+
+$build
+$build$revision
+[1] "f148142cf8"
+
+$build$time
+[1] "2019-07-01T21:30:10"
+
+$build$version
+[1] "4.0.0-alpha-2"
+
+
+$os
+$os$arch
+[1] "amd64"
+
+$os$name
+[1] "Windows 10"
+
+$os$version
+[1] "10.0"
+
+
+$java
+$java$version
+[1] "1.8.0_231"
+
+
+[[1]]
+[1] "loginform-username"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] "loginform-password"
+
+[[1]]
+[1] "form-control"
+
+[[1]]
+[1] ""
+
+[[1]]
+[1] "btn btn-primary"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/site/login"
+
+[[1]]
+[1] "https://dataportal.kiwa.info/project"
+
+[1] TRUE
+[[1]]
+[1] "https://dataportal.kiwa.info/project/index?page=1"
+
+[1] 4000
+[1] 4010
+[1] "2020-12-09: Dit script heeft gerund"

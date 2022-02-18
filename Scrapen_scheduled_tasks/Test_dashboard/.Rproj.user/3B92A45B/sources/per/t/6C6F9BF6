@@ -1,0 +1,24 @@
+{
+    "id": "6C6F9BF6",
+    "path": "~/Scrapen_scheduled_tasks/Test dashboard/Test_app_EK/app.R",
+    "project_path": "Test_app_EK/app.R",
+    "type": "r_source",
+    "hash": "3547599989",
+    "contents": "",
+    "dirty": false,
+    "created": 1603437564830.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "59,1",
+        "scrollLine": "25"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1603441126,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1603441126688,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,506 @@
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3796920 for application: 3080278 ...
+Waiting for task: 815092960
+  building: Building image: 4299419
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4299419
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3796932 for application: 3080278 ...
+Waiting for task: 815093944
+  building: Parsing manifest
+  building: Building image: 4299437
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4299437
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3796941 for application: 3080278 ...
+Waiting for task: 815094965
+  building: Building image: 4299448
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4299448
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3815187 for application: 3080278 ...
+Waiting for task: 817586114
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4324677
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3819380 for application: 3080278 ...
+Waiting for task: 818192431
+  building: Parsing manifest
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4330923
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3822875 for application: 3080278 ...
+Waiting for task: 818664416
+  building: Building image: 4335989
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4335989
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3826974 for application: 3080278 ...
+Waiting for task: 819269702
+  building: Building image: 4342506
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4342506
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3836752 for application: 3080278 ...
+Waiting for task: 820664619
+  building: Building image: 4356264
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4356264
+  deploying: Starting instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3841897 for application: 3080278 ...
+Waiting for task: 821276273
+  building: Building image: 4363146
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4363146
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-10: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3846547 for application: 3080278 ...
+Waiting for task: 821889460
+  building: Parsing manifest
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4369451
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-11: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3850985 for application: 3080278 ...
+Waiting for task: 822498867
+  building: Building image: 4375589
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4375589
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-12: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3855663 for application: 3080278 ...
+Waiting for task: 823132305
+  building: Building image: 4382829
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4382829
+  deploying: Starting instances
+  rollforward: Activating new instances
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3865882 for application: 3080278 ...
+Waiting for task: 824569057
+  building: Parsing manifest
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4395694
+  deploying: Starting instances
+  rollforward: Activating new instances
+  success: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-16: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3870413 for application: 3080278 ...
+Waiting for task: 825171651
+  building: Parsing manifest
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4401947
+  deploying: Starting instances
+  rollforward: Activating new instances
+  success: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-17: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3875149 for application: 3080278 ...
+Waiting for task: 825822782
+  building: Building image: 4408372
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4408372
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-18: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3894129 for application: 3080278 ...
+Waiting for task: 828500036
+  building: Parsing manifest
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4432475
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-23: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3898714 for application: 3080278 ...
+Waiting for task: 829104960
+  building: Parsing manifest
+  building: Building image: 4438204
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4438204
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3903412 for application: 3080278 ...
+Waiting for task: 829716769
+  building: Processing bundle: 3903412
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4444035
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-25: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3908207 for application: 3080278 ...
+Waiting for task: 830279112
+  building: Building image: 4449697
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4449697
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-26: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3921884 for application: 3080278 ...
+Waiting for task: 832118018
+  building: Building image: 4466114
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4466114
+  deploying: Starting instances
+  rollforward: Activating new instances
+  success: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-11-30: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3926665 for application: 3080278 ...
+Waiting for task: 832742354
+  building: Building image: 4472266
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4472266
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-01: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3931799 for application: 3080278 ...
+Waiting for task: 833388552
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4478863
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-02: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3937148 for application: 3080278 ...
+Waiting for task: 834063074
+  building: Building image: 4485671
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4485671
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-03: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942184 for application: 3080278 ...
+Waiting for task: 834748204
+  building: Building image: 4492579
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4492579
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-04: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942207 for application: 3080278 ...
+Waiting for task: 834751088
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4492609
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-04: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942216 for application: 3080278 ...
+Waiting for task: 834751869
+################################ Begin Task Log ################################ 
+################################# End Task Log ################################# 
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942232 for application: 3080278 ...
+Waiting for task: 834756160
+################################ Begin Task Log ################################ 
+################################# End Task Log ################################# 
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942383 for application: 3080278 ...
+Waiting for task: 834777978
+  building: Building image: 4492853
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4492853
+  deploying: Starting instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-04: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942394 for application: 3080278 ...
+Waiting for task: 834781114
+  building: Processing bundle: 3942394
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4492866
+  deploying: Starting instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-04: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3942715 for application: 3080278 ...
+Waiting for task: 834824603
+  building: Building image: 4493294
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4493294
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-04: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3953928 for application: 3080278 ...
+Waiting for task: 836223719
+  building: Building image: 4506034
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4506034
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-07: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3954582 for application: 3080278 ...
+Waiting for task: 836319681
+  building: Parsing manifest
+  building: Building image: 4506823
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4506823
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-07: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3959147 for application: 3080278 ...
+Waiting for task: 836858840
+  building: Parsing manifest
+  building: Fetching packages
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4512143
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-08: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3964611 for application: 3080278 ...
+Waiting for task: 837480228
+  building: Parsing manifest
+  building: Building image: 4518442
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4518442
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-09: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3969918 for application: 3080278 ...
+Waiting for task: 838104498
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4524547
+  deploying: Starting instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-10: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3991132 for application: 3080278 ...
+Waiting for task: 840765476
+  building: Building image: 4547966
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4547966
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-15: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 3995628 for application: 3080278 ...
+Waiting for task: 841355219
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4552925
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-16: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 4000445 for application: 3080278 ...
+Waiting for task: 841933959
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4558110
+  deploying: Starting instances
+  rollforward: Activating new instances
+  unstaging: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-17: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 4004937 for application: 3080278 ...
+Waiting for task: 842476898
+  building: Processing bundle: 4004937
+  building: Building image: 4562892
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4562892
+  deploying: Starting instances
+  rollforward: Activating new instances
+  success: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-18: Dit script heeft gerund"
+Preparing to deploy application...DONE
+Uploading bundle for application: 3080278...DONE
+Deploying bundle: 4018051 for application: 3080278 ...
+Waiting for task: 844099512
+  building: Parsing manifest
+  building: Installing packages
+  building: Installing files
+  building: Pushing image: 4576861
+  deploying: Starting instances
+  rollforward: Activating new instances
+  terminating: Stopping old instances
+Application successfully deployed to https://brabantsomgevingsdatalab.shinyapps.io/Test_app_EK/
+[1] "2020-12-22: Dit script heeft gerund"
