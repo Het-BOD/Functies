@@ -111,14 +111,20 @@ add_coords <- function(df, adreskolom) {
 ####################################
 ## Provinciegrens en bbox_brabant ##
 ####################################
-url <- parse_url("https://geodata.nationaalgeoregister.nl/bestuurlijkegrenzen/wfs?")
+library(httr)
+library(dplyr)
+library(sf)
+
+url <- parse_url("https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?")
 url$query <- list(request = "GetFeature",
-                  typename = "bestuurlijkegrenzen:provincies",
-                  service = "wfs",
-                  srsName  = "EPSG:4326",
-                  outputFormat='json')
-request <- build_url(url);request
-provincies <- sf::st_read(request)
-brabant <- provincies[provincies$provincienaam == "Noord-Brabant",]
+                  typename = "bestuurlijkegebieden:Provinciegebied",
+                  service = "WFS",
+                  version = '1.0.0',
+                  srsName = "urn:ogc:def:crs:EPSG::4326",
+                  outputFormat='application/json')
+
+provincies <- st_read(build_url(url))
+brabant <- provincies[provincies$naam == "Noord-Brabant",]
 bbox_brabant <- sf::st_bbox(brabant$geom)
+
 rm(url, request, provincies)
